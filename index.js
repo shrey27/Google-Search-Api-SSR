@@ -11,7 +11,9 @@ app.listen(8000);
 let initialState = {
    hotels: { 
     isFetching: false,
-    hotelsList: [],
+    locations:[],
+    hotels: [],
+    hotel : null,
     error: ""
   }
 }

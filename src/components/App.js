@@ -1,30 +1,16 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-// import SearchBar from "./Locationinput";
+import { useSelector } from "react-redux";
 import Hotel from "./Hotel";
-import { fetchHotels } from "../redux/store";
+import Searchbar from './Searchbar';
 
 export default function App() {
-  const dispatch = useDispatch();
-  const { isFetching, hotelsList, error } = useSelector((state) => state.hotels);
-
-  useEffect(() => {
-    dispatch(fetchHotels());
-  }, [dispatch]);
+  const { isFetching, hotel, error } = useSelector((state) => state.hotels);
 
   return (
     <div>
-      {/* <SearchBar /> */}
-      {
-        isFetching ? <h3>Fetching details...!!</h3> :
-          (error ? <h3>{error}</h3> : 
-            <ul>
-              {hotelsList.map((item) => {
-                return <Hotel key={item.hotelID} {...item}/>
-              })}
-            </ul>
-          )
-      }
+      <Searchbar />
+      {error && <h3>{error}</h3>}
+      {hotel && <Hotel {...hotel} />}
     </div>
   );
 }

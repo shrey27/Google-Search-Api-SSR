@@ -3,10 +3,10 @@ import React from 'react';
 export default function Hotel(props) {
     const { title, address, description } = props;  
     return (
-      <li>
+      <div className='hotel'>
         <h2>{title}</h2>
-        <h3>{address}</h3>
+        <h2>{address}</h2>
         <p>{description}</p>
-      </li>
+      </div>
     );
   }
