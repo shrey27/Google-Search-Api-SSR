@@ -1,4 +1,4 @@
-# React Server-Side Rendering Example
+# Google Search API with SSR, Webpack and Redux Toolkit
 
 This project showcases the use case of google search api.
 
@@ -6,6 +6,7 @@ This project showcases the use case of google search api.
 
 - Search functionality with Google search API
 - data listing is hosted on a Node JS server, which can be accessesd via an API
+- DB repo (Hotels API)[https://github.com/shrey27/Hotels-Database/tree/main]
 - Entire application is SSR with base setup done using Webpack
 - Redux toolkit has been used for state management
 
