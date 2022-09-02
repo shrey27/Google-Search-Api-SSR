@@ -1,7 +1,7 @@
 {
-  "name": "fab-hotels",
+  "name": "google-search-api",
   "version": "1.0.0",
-  "description": "Fab hotels - SSR with Webpack",
+  "description": "Google Search - SSR with Webpack",
   "scripts": {
     "start": "yarn build && node index.js",
     "build": "webpack --config webpack.config.js"

@@ -27,7 +27,7 @@ function createPage(html, preloadedState){
     <html lang="en">
     <head>
       <meta charset="utf-8">
-      <title> SSR with webpack  </title>
+      <title> Google Search - SSR  </title>
       <link rel="stylesheet" href="build/styles.css" />
     </head>
     <body>
