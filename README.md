@@ -18,6 +18,8 @@ This project showcases the use case of google search api.
 ``` 
 yarn install
 ```
+- Open the DB repo in repl and run the server for backend to initiate
+
 - Launch the server:
 
 ```bash

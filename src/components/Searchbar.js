@@ -46,7 +46,7 @@ export default function App() {
         onChange={handleChange} 
         value={search} 
         className="search-input" 
-        data-testid="search-input"/>
+        data-testid="search-input" />
       <div className="search-options">
         {locations.length > 0 && <h3>Cities</h3>}
         <div>{locations.map(item => {

@@ -19,12 +19,12 @@ let initialState = {
 }
 
 app.get('/', (_, res) => {
-  const { preloadedState, content } = renderHtml(initialState)
-  const response = createPage(preloadedState, content)
+  const { content, preloadedState } = renderHtml(initialState)
+  const response = createPage(content, preloadedState)
   res.send(response);
 });
 
-function createPage(html, preloadedState){
+function createPage(html='', preloadedState){
     return `<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -33,15 +33,13 @@ function createPage(html, preloadedState){
       <link rel="stylesheet" href="build/styles.css" />
     </head>
     <body>
-      <div class="content">
-         <div id="root" class="wrap-inner">
-            ${html || ""}
-         </div>
-      </div>
-      <script>
-          window.__STATE__ = ${JSON.stringify(preloadedState) ||  ""}
-      </script>
-      <script src="build/index.js"></script>
+          <div id="root" class="wrap-inner">
+              ${html}
+          </div>
+          <script>
+              window.__STATE__ = ${JSON.stringify(preloadedState) ||  ""}
+          </script>
+          <script src="build/index.js"></script>
     </body>
     `
 }

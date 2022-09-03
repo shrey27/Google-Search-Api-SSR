@@ -6,11 +6,7 @@ import App from './components/App'
 
 module.exports = function render(initialState) {
   const store = createStoreFromState(initialState)
-  let content = renderToString(
-    <Provider store={store} >
-       <App />
-    </Provider>
-  );
+  let content = renderToString(<Provider store={store}><App /></Provider>);
   const preloadedState = store.getState()
-  return {content, preloadedState};
+  return { content, preloadedState };
 }
