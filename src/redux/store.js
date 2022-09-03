@@ -34,7 +34,6 @@ const hotelslice = createSlice({
   },
   [fetchData.fulfilled] : (state, action) => {
     state.isFetching = false
-    console.log(action.payload)
     state.locations = action.payload.locations
     state.hotels = action.payload.hotels
   },

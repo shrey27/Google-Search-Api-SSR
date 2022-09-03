@@ -42,18 +42,23 @@ export default function App() {
 
   return (
     <div className="search-box">
-      <input type="text" onChange={handleChange} value={search} className="search-input" />
+      <input type="text" 
+        onChange={handleChange} 
+        value={search} 
+        className="search-input" 
+        data-testid="search-input"/>
       <div className="search-options">
         {locations.length > 0 && <h3>Cities</h3>}
         <div>{locations.map(item => {
-                return <div className="search-option">{item}</div>
+                return <div key={item} className="search-option">{item}</div>
             })}</div>
         {hotels.length > 0 && <h3>Hotels</h3>}
         <div>{hotels.map(item => {
                 return <div 
                     key={item.hotelID} 
                     onClick={() => dispatch(getHotel(item.hotelID))} 
-                    className="search-option">
+                    className="search-option"
+                    data-testid="search-option">
                     {`${item.title}, ${item.address}`}
                 </div>
             })}
