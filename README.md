@@ -12,18 +12,17 @@ This project showcases the use case of google search api.
 
 ## Development
 
+- Use the below link to run the repl, where backedn api is hosted
+
+```
+https://replit.com/@shrey27/hotels-api
+```
 - Clone the repo:
 
 - Go to the project directory and install dependencies using 
 ``` 
 yarn install
 ```
-- Use the below link to run the repl, where backedn api is hosted
-
-```
-https://replit.com/@shrey27/hotels-api
-```
-
 - Launch the server:
 
 ```bash
