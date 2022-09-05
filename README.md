@@ -12,7 +12,7 @@ This project showcases the use case of google search api.
 
 ## Development
 
-- Use the below link to run the repl, where backend api is hosted
+- DB for hotels is hosted on a repl. Use the link below to access the repl and run it, before running the frontend code.
 ```
 https://replit.com/@shrey27/hotels-api
 ```
