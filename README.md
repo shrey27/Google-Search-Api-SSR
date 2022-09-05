@@ -16,7 +16,10 @@ This project showcases the use case of google search api.
 ```
 https://replit.com/@shrey27/hotels-api
 ```
-- Clone the repo:
+- Clone this repo:
+```
+git clone https://github.com/shrey27/Google-Search-Api-SSR.git
+```
 - Go to the project directory and install dependencies using 
 ``` 
 yarn install
