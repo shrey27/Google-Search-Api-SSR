@@ -18,7 +18,11 @@ This project showcases the use case of google search api.
 ``` 
 yarn install
 ```
-- Open the DB repo in repl and run the server for backend to initiate
+- Use the below link to run the repl, where backedn api is hosted
+
+```
+https://replit.com/@shrey27/hotels-api
+```
 
 - Launch the server:
 
