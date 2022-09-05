@@ -12,7 +12,7 @@ This project showcases the use case of google search api.
 
 ## Development
 
-- Use the below link to run the repl, where backedn api is hosted
+- Use the below link to run the repl, where backend api is hosted
 ```
 https://replit.com/@shrey27/hotels-api
 ```
@@ -24,4 +24,8 @@ yarn install
 - Launch the server:
 ```bash
 $ yarn start
+```
+- For testing:
+```
+yarn test
 ```
